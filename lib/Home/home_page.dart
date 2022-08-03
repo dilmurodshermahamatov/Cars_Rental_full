@@ -1,3 +1,4 @@
+import 'package:car_rental/Home/number_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -80,7 +81,13 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Number(),
+                          ));
+                    },
                     child: Container(
                       width: 335.w,
                       height: 54.h,
