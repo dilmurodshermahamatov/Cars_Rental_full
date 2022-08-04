@@ -63,6 +63,22 @@ flutter:
   assets:
     - assets/image/group.png
     - assets/icon/gr.png
+    - assets/images/mers.png
+    - assets/images/bmw.png
+    - assets/images/toyota.png
+    - assets/images/chevrolet.png
+    - assets/images/land.png
+    - assets/images/mers2.png
+    - assets/images/bmw2.png
+    - assets/images/toyota2.png
+    - assets/images/corvette.png
+    - assets/images/camaro.png
+    - assets/icon/m2.png
+    - assets/icon/m1.png
+    - assets/icon/oddiy.png
+    - assets/icon/biznes.png
+    - assets/icon/pre.png
+    - assets/icon/catalog.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

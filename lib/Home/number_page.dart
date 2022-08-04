@@ -27,10 +27,15 @@ class _NumberState extends State<Number> {
             elevation: 0.0,
             leading: Padding(
               padding: EdgeInsets.only(top: 20.h, left: 20.w),
-              child: Icon(
-                Icons.arrow_back_ios,
-                size: 22.sp,
-                color: Colors.black,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Icon(
+                  Icons.arrow_back_ios,
+                  size: 22.sp,
+                  color: Colors.black,
+                ),
               ),
             ),
             title: Padding(
