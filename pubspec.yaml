@@ -79,6 +79,16 @@ flutter:
     - assets/icon/biznes.png
     - assets/icon/pre.png
     - assets/icon/catalog.png
+    - assets/images/class_221.png
+    - assets/images/class_222.png
+    - assets/images/mers_v.png
+    - assets/icon/yulduz.png
+    - assets/images/bmw3.png
+    - assets/images/tesla.png
+    - assets/icon/kalender.png
+    - assets/icon/aylana.png
+    - assets/icon/compres.png
+    - assets/icon/loss.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,4 +1,6 @@
 import 'package:car_rental/models/cars_page.dart';
+import 'package:car_rental/models/rentals_page.dart';
+import 'package:car_rental/models/saved_page.dart';
 import 'package:flutter/material.dart';
 
 class Car_Navigator extends StatefulWidget {
@@ -17,18 +19,12 @@ class _Car_NavigatorState extends State<Car_Navigator> {
 
   static List<Widget> _widget = <Widget>[
     Cars(),
-    Text(
-      "Bar 2",
-    ),
-    Text(
-      "Bar 3",
-    ),
-    Text(
-      "Bar 4",
-    ),
+    Rentals(),
+    Saved(),
+    Text("Bar 4"),
   ];
- //
- 
+  //
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

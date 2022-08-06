@@ -1,3 +1,4 @@
+import 'package:car_rental/Filter_folder/cars_filter.dart';
 import 'package:car_rental/malumot.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -477,21 +478,30 @@ class _FilterState extends State<Filter> {
                     ),
                   ),
 
-                  Container(
-                    margin: EdgeInsets.only(top: 27.h),
-                    width: 335,
-                    height: 54.h,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8.r),
-                      color: Colors.black,
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Apply filter",
-                        style: TextStyle(
-                            fontSize: 17.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.white),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CarsFilter(),
+                          ));
+                    },
+                    child: Container(
+                      margin: EdgeInsets.only(top: 27.h),
+                      width: 335,
+                      height: 54.h,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8.r),
+                        color: Colors.black,
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Apply filter",
+                          style: TextStyle(
+                              fontSize: 17.sp,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white),
+                        ),
                       ),
                     ),
                   ),
