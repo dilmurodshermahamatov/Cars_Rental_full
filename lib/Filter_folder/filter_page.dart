@@ -332,14 +332,16 @@ class _FilterState extends State<Filter> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10.h),
+                  SizedBox(
+                    height: 10.h,
+                  ),
                   Container(
                     height: 35.h,
                     child: Slider(
                       thumbColor: Colors.yellow,
                       activeColor: Colors.grey,
                       inactiveColor: Colors.black,
-                      divisions: 50,
+                      divisions: 10,
                       max: 500,
                       label: "💲${_value.toInt()}",
                       value: _value,

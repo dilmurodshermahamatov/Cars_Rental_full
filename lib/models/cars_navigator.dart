@@ -1,3 +1,4 @@
+import 'package:car_rental/Profil_folder/profil_home.dart';
 import 'package:car_rental/models/cars_page.dart';
 import 'package:car_rental/models/rentals_page.dart';
 import 'package:car_rental/models/saved_page.dart';
@@ -21,7 +22,7 @@ class _Car_NavigatorState extends State<Car_Navigator> {
     Cars(),
     Rentals(),
     Saved(),
-    Text("Bar 4"),
+    Profil(),
   ];
   //
 

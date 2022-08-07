@@ -89,6 +89,11 @@ flutter:
     - assets/icon/aylana.png
     - assets/icon/compres.png
     - assets/icon/loss.png
+    - assets/icon/profil.png
+    - assets/icon/proicon.png
+    - assets/icon/picon.png
+    - assets/icon/accon.png
+    - assets/icon/messenger.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
