@@ -34,6 +34,7 @@ class _ViewPageState extends State<ViewPage> {
               padding: EdgeInsets.only(left: 10.w, top: 20.h),
               child: GestureDetector(
                 onTap: () {
+                  setState(() {});
                   Navigator.pop(context);
                 },
                 child: Icon(
@@ -59,7 +60,7 @@ class _ViewPageState extends State<ViewPage> {
               Column(
                 children: [
                   Container(
-                    height: 220.h,
+                    height: 160.h,
                     child: PageView.builder(
                       onPageChanged: (e) {
                         _i = e;
@@ -73,7 +74,7 @@ class _ViewPageState extends State<ViewPage> {
                           child: Image.asset(
                             "assets/images/mers_v.png",
                             width: 280.w,
-                            height: 180.h,
+                            height: 160.h,
                           ),
                         );
                       },
@@ -99,7 +100,7 @@ class _ViewPageState extends State<ViewPage> {
                           child: Padding(
                             padding: EdgeInsets.all(8.0.h),
                             child: CircleAvatar(
-                              radius: _i == 0 ? 8 : 6.r,
+                              radius: _i == 0 ? 7 : 6.r,
                               backgroundColor:
                                   _i == 0 ? Colors.orange : Colors.grey,
                             ),
@@ -117,7 +118,7 @@ class _ViewPageState extends State<ViewPage> {
                             });
                           },
                           child: CircleAvatar(
-                            radius: _i == 1 ? 8 : 6.r,
+                            radius: _i == 1 ? 7 : 6.r,
                             backgroundColor:
                                 _i == 1 ? Colors.orange : Colors.grey,
                           ),
@@ -136,7 +137,7 @@ class _ViewPageState extends State<ViewPage> {
                           child: Padding(
                             padding: EdgeInsets.all(8.0.h),
                             child: CircleAvatar(
-                              radius: _i == 2 ? 8 : 6.r,
+                              radius: _i == 2 ? 7 : 6.r,
                               backgroundColor:
                                   _i == 2 ? Colors.orange : Colors.grey,
                             ),
@@ -154,7 +155,7 @@ class _ViewPageState extends State<ViewPage> {
                             });
                           },
                           child: CircleAvatar(
-                            radius: _i == 3 ? 8 : 6.r,
+                            radius: _i == 3 ? 7 : 6.r,
                             backgroundColor:
                                 _i == 3 ? Colors.orange : Colors.grey,
                           ),
@@ -172,7 +173,7 @@ class _ViewPageState extends State<ViewPage> {
                             });
                           },
                           child: CircleAvatar(
-                            radius: _i == 4 ? 8 : 6.r,
+                            radius: _i == 4 ? 7 : 6.r,
                             backgroundColor:
                                 _i == 4 ? Colors.orange : Colors.grey,
                           ),
@@ -183,7 +184,7 @@ class _ViewPageState extends State<ViewPage> {
                   Row(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 20.w, top: 25.h),
+                        margin: EdgeInsets.only(left: 20.w, top: 20.h),
                         width: 140.w,
                         height: 21.h,
                         decoration: BoxDecoration(
@@ -350,7 +351,7 @@ class _ViewPageState extends State<ViewPage> {
                   Row(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: 20.w, top: 20.h),
+                        padding: EdgeInsets.only(left: 20.w, top: 15.h),
                         child: Text(
                           "Color",
                           style: TextStyle(
@@ -374,7 +375,7 @@ class _ViewPageState extends State<ViewPage> {
                   Row(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: 20.w, top: 20.h),
+                        padding: EdgeInsets.only(left: 20.w, top: 15.h),
                         child: Text(
                           "Main options",
                           style: TextStyle(
@@ -480,7 +481,7 @@ class _ViewPageState extends State<ViewPage> {
                           ));
                     },
                     child: Container(
-                      margin: EdgeInsets.only(top: 30.h),
+                      margin: EdgeInsets.only(top: 27.h),
                       width: 335,
                       height: 54.h,
                       decoration: BoxDecoration(

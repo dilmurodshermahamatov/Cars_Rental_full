@@ -40,7 +40,7 @@ class _RentalsState extends State<Rentals> {
                 margin: EdgeInsets.only(top: 20.h),
                 padding: EdgeInsets.symmetric(horizontal: 20.w),
                 width: 335.w,
-                height: 390.h,
+                height: 420.h,
                 decoration: BoxDecoration(
                   border: Border.all(width: 1.5, color: Colors.grey.shade300),
                   borderRadius: BorderRadius.circular(8.r),

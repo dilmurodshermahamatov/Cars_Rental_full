@@ -89,7 +89,7 @@ class _FilterState extends State<Filter> {
               child: Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 25.h),
+                    padding: EdgeInsets.only(top: 20.h),
                     child: Row(
                       children: [
                         Text(
@@ -489,7 +489,7 @@ class _FilterState extends State<Filter> {
                           ));
                     },
                     child: Container(
-                      margin: EdgeInsets.only(top: 27.h),
+                      margin: EdgeInsets.only(top: 27.h, bottom: 10.h),
                       width: 335,
                       height: 54.h,
                       decoration: BoxDecoration(
