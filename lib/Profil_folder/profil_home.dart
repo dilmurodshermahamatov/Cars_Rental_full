@@ -1,3 +1,4 @@
+import 'package:car_rental/Home/home_page.dart';
 import 'package:car_rental/Payment_folder/payment_home.dart';
 import 'package:car_rental/Profil_folder/Accout_mesenger/step_1.dart';
 import 'package:car_rental/Profil_folder/mesenger_page.dart';
@@ -298,7 +299,11 @@ class _ProfilState extends State<Profil> {
                                   ),
                                 ),
                                 TextButton(
-                                  onPressed: () => Navigator.pop(context, 'OK'),
+                                  onPressed: () => Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => HomePage(),
+                                      )),
                                   child: Center(
                                     child: Text(
                                       'OK',

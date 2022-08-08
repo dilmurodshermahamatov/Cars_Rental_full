@@ -68,33 +68,35 @@ class _NumberState extends State<Number> {
                         EdgeInsets.only(top: 60.h, left: 20.w, right: 20.w),
                     child: Form(
                       key: _formKey,
-                      child: TextFormField(
-                        keyboardType: TextInputType.number,
-                        maxLength: son,
-                        autovalidateMode: AutovalidateMode.onUserInteraction,
-                        validator: (value) {
-                          if (value!.length < 13) {
-                            return "Raqam kiriting";
-                          } else {
-                            color = Colors.black;
-                            blac = Colors.white;
-                            return null;
-                          }
-                        },
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                            borderSide:
-                                BorderSide(color: Colors.grey, width: 1),
-                            borderRadius: BorderRadius.circular(8.r),
+                      child: Container(
+                        child: TextFormField(
+                          keyboardType: TextInputType.number,
+                          maxLength: son,
+                          autovalidateMode: AutovalidateMode.onUserInteraction,
+                          validator: (value) {
+                            if (value!.length < 13) {
+                              return "Raqam kiriting";
+                            } else {
+                              color = Colors.black;
+                              blac = Colors.white;
+                              return null;
+                            }
+                          },
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.grey, width: 1),
+                              borderRadius: BorderRadius.circular(8.r),
+                            ),
                           ),
+                          inputFormatters: [
+                            TextInputMask(
+                              mask: '\\+999999999999',
+                              // placeholder: '_',
+                              maxPlaceHolders: son,
+                            ),
+                          ],
                         ),
-                        inputFormatters: [
-                          TextInputMask(
-                            mask: '\\+999999999999',
-                            // placeholder: '_',
-                            maxPlaceHolders: son,
-                          ),
-                        ],
                       ),
                     ),
                   ),
