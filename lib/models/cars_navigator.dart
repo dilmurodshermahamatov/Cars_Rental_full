@@ -36,20 +36,24 @@ class _Car_NavigatorState extends State<Car_Navigator> {
         elevation: 0,
         items: [
           BottomNavigationBarItem(
+            backgroundColor: Colors.white,
             icon: Icon(son == 0 ? Icons.home : Icons.home_outlined),
             label: "Home",
           ),
           BottomNavigationBarItem(
+            backgroundColor: Colors.white,
             icon: Icon(son == 1 ? Icons.near_me : Icons.near_me_outlined),
             label: "Trips",
           ),
           BottomNavigationBarItem(
+            backgroundColor: Colors.white,
             icon: Icon(son == 2
                 ? Icons.bookmark_outlined
                 : Icons.bookmark_border_outlined),
             label: "Saved",
           ),
           BottomNavigationBarItem(
+            backgroundColor: Colors.white,
             icon: Icon(son == 3 ? Icons.person_sharp : Icons.person_outlined),
             label: "Profile",
             // login_rounded

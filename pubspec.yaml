@@ -94,6 +94,9 @@ flutter:
     - assets/icon/picon.png
     - assets/icon/accon.png
     - assets/icon/messenger.png
+    - assets/icon/mes.png
+    - assets/icon/smi.png
+    - assets/icon/smile.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

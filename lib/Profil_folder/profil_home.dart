@@ -1,5 +1,6 @@
 import 'package:car_rental/Payment_folder/payment_home.dart';
 import 'package:car_rental/Profil_folder/Accout_mesenger/step_1.dart';
+import 'package:car_rental/Profil_folder/mesenger_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -132,13 +133,21 @@ class _ProfilState extends State<Profil> {
                   ),
                 ),
                 //
-                Padding(
-                  padding: EdgeInsets.only(top: 25.h),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      GestureDetector(
-                        child: Row(
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Mesenger(),
+                      ),
+                    );
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 25.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
                           children: [
                             Image.asset(
                               'assets/icon/messenger.png',
@@ -156,13 +165,13 @@ class _ProfilState extends State<Profil> {
                             ),
                           ],
                         ),
-                      ),
-                      Row(
-                        children: [
-                          Icon(Icons.arrow_forward_ios, size: 20.sp),
-                        ],
-                      ),
-                    ],
+                        Row(
+                          children: [
+                            Icon(Icons.arrow_forward_ios, size: 20.sp),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Padding(
@@ -173,20 +182,21 @@ class _ProfilState extends State<Profil> {
                   ),
                 ),
                 //
-                Padding(
-                  padding: EdgeInsets.only(top: 25.h),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => Step1(),
-                              ));
-                        },
-                        child: Row(
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Step1(),
+                      ),
+                    );
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 25.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
                           children: [
                             Image.asset(
                               'assets/icon/accon.png',
@@ -204,13 +214,13 @@ class _ProfilState extends State<Profil> {
                             ),
                           ],
                         ),
-                      ),
-                      Row(
-                        children: [
-                          Icon(Icons.arrow_forward_ios, size: 20.sp),
-                        ],
-                      ),
-                    ],
+                        Row(
+                          children: [
+                            Icon(Icons.arrow_forward_ios, size: 20.sp),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Padding(
@@ -221,13 +231,97 @@ class _ProfilState extends State<Profil> {
                   ),
                 ),
                 //
-                Padding(
-                  padding: EdgeInsets.only(top: 25.h),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      GestureDetector(
-                        child: Row(
+                GestureDetector(
+                  onTap: () => showDialog(
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          backgroundColor: Colors.grey.shade300,
+                          elevation: 0.0,
+                          actionsPadding: EdgeInsets.zero,
+                          contentPadding: EdgeInsets.zero,
+                          insetPadding: EdgeInsets.zero,
+                          buttonPadding: EdgeInsets.zero,
+                          titlePadding:
+                              EdgeInsets.only(top: 20.h, bottom: 10.h),
+                          title: Center(
+                            child: Text(
+                              "Выйти?",
+                              style: TextStyle(
+                                fontSize: 16.sp,
+                                fontWeight: FontWeight.w700,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                          content: Container(
+                            height: 130.h,
+                            child: Column(
+                              children: [
+                                Text(
+                                  "Вы можете пользоваться Egar.uz \n на всех Ваших устройствах \n одновременно",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      fontSize: 12.sp,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                                SizedBox(height: 24.h),
+                                Text(
+                                  "Важно: если Вы выйдете из \n аккаунта все секретные чаты на \n этом устройстве будут утеряны",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      fontSize: 12.sp,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                              ],
+                            ),
+                          ),
+                          actions: [
+                            Divider(
+                              color: Colors.grey,
+                              thickness: 1.h,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                TextButton(
+                                  onPressed: () =>
+                                      Navigator.pop(context, 'Cancel'),
+                                  child: Center(
+                                    child: Text(
+                                      'Cancel',
+                                      style: TextStyle(
+                                        fontSize: 16.sp,
+                                        fontWeight: FontWeight.w700,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                TextButton(
+                                  onPressed: () => Navigator.pop(context, 'OK'),
+                                  child: Center(
+                                    child: Text(
+                                      'OK',
+                                      style: TextStyle(
+                                        fontSize: 16.sp,
+                                        fontWeight: FontWeight.w700,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        );
+                      },
+                      context: context),
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 25.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
                           children: [
                             Icon(
                               Icons.login_rounded,
@@ -244,13 +338,13 @@ class _ProfilState extends State<Profil> {
                             ),
                           ],
                         ),
-                      ),
-                      Row(
-                        children: [
-                          Icon(Icons.arrow_forward_ios, size: 20.sp),
-                        ],
-                      ),
-                    ],
+                        Row(
+                          children: [
+                            Icon(Icons.arrow_forward_ios, size: 20.sp),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Padding(
